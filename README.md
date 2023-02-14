@@ -49,7 +49,7 @@ src/
 
 ```
 
-Use the `Signal` suffix for signals variable names.
+Pay attention to the file name below
 
 ```typescript
 /* recommended */
@@ -100,7 +100,7 @@ const counterSignal = useSignal(0);
 
 ## Translations
 
-If you want to translate this style guide, please free to submit a PR with a markdown file under `translations` folder `.md` file with the relevant locale (for example: `es-ES.md`)
+If you want to translate this style guide, please feel free to submit a PR with a markdown file under `translations` folder `.md` file with the relevant locale (for example: `es-ES.md`)
 
 ## Inspirations & Credits
 
