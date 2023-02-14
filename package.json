@@ -1,0 +1,15 @@
+{
+  "name": "qwik-style-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "toc": "doctoc --maxlevel=3 README.md"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "doctoc": "^2.2.1"
+  }
+}
