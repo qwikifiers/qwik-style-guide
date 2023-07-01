@@ -11,15 +11,18 @@ The aim is to potentially "graduate" the most popular / agreed upon rules into t
 
 
 
-  <!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of Contents
 
 - [File Naming](#file-naming)
   - [Use kebab-case for files](#use-kebab-case-for-files)
 - [Variables Naming](#variables-naming)
-  - ["Signal" Suffix](#signal-suffix)
-  
+  - ["Sig" Suffix for Signals](#sig-suffix-for-signals)
+- [Translations](#translations)
+- [Inspirations & Credits](#inspirations--credits)
+- [License](#license)
+
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 *generated with [DocToc](https://github.com/thlorenz/doctoc)*
@@ -30,15 +33,14 @@ The aim is to potentially "graduate" the most popular / agreed upon rules into t
 
   - Use the kebab case for file names
 
+#### Why? 🤔
+To keep things consistent across the entire project.
+  
+This is not a must rule, but whatever convention you use, stick with it. 
 
-<details>
-  <summary>Why? 🤔</summary>
-  <br/>
-  To keep things consistent across the entire project.
   
-  This is not a must rule, but whatever convention you use, stick with it. 
-</details>
-  
+
+#### Example
 
 ```typescript
 /* avoid */
@@ -62,20 +64,14 @@ src/
 
 ## Variables Naming
 
-### "Signal" Suffix
+### "Sig" Suffix for Signals
 
-  - Use the `Signal` suffix for signals variable names
+  - Use the `Sig` suffix for signals variable names
 
-
-<details>
-  <summary>Why? 🤔</summary>
-  <br/>
+#### Why? 🤔
+To make the component code more "Scannable" 
   
-  To make the component code more "Scannable" 
-  
-</details>
-  
-
+#### Example
 
 ```typescript
 /* avoid */
@@ -84,17 +80,15 @@ const counter = useSignal(0);
 
 ```
 
-Use the `Signal` suffix for signals variable names.
+Use the `Sig` suffix for signals variable names.
 
 ```typescript
 /* recommended */
 
-const counterSignal = useSignal(0);
+const counterSig = useSignal(0);
 ```
 
-
 **[Back to top](#table-of-contents)**
-
 
 
 
