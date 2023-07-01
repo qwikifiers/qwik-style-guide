@@ -19,6 +19,8 @@ The aim is to potentially "graduate" the most popular / agreed upon rules into t
   - [Use kebab-case for files](#use-kebab-case-for-files)
 - [Variables Naming](#variables-naming)
   - ["Sig" Suffix for Signals](#sig-suffix-for-signals)
+- [Tasks](#tasks)
+  - [Tasks named functions](#tasks-named-functions)
 - [Translations](#translations)
 - [Inspirations & Credits](#inspirations--credits)
 - [License](#license)
@@ -86,6 +88,43 @@ Use the `Sig` suffix for signals variable names.
 /* recommended */
 
 const counterSig = useSignal(0);
+```
+
+**[Back to top](#table-of-contents)**
+
+
+## Tasks
+
+### Tasks named functions
+
+  - Use regular named functions instead of arrow functions for tasks and visible tasks.
+
+#### Why? 🤔
+When having several tasks inside a component, it's hard to understand what is each task doing without reading its implementation.
+
+So having a regular function gives a name for the task describing its responsibility.
+
+Plus, it helps when debugging to see a named function in the call stack. 
+  
+#### Example
+
+```typescript
+/* avoid */
+
+useTask$(()=>{ 
+  // some code that should run when the component is created
+});
+
+```
+
+Give a descriptive name for the task callback function:
+
+```typescript
+/* recommended */
+
+useTask$(function initTask(){ 
+  // some code that should run when the component is created
+});
 ```
 
 **[Back to top](#table-of-contents)**
